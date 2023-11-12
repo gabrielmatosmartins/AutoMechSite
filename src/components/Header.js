@@ -12,7 +12,7 @@ import Logo from "../images/Logo.png"
 import { useSidebarContext } from "../contexts/SidebarContext";
 import { FiMenu } from "react-icons/fi";
 import Image from 'next/image'
-import Hora from './Hora'
+import Hora from "./hora"
 
 const Header = () => {
   const isMobile = useBreakpointValue({
@@ -26,7 +26,7 @@ const Header = () => {
     <Flex
       as="header"
       w="100%"
-      maxW={1480}
+      maxW={"auto"}
       h="20"
       mx="auto"
       px="2"
@@ -53,8 +53,6 @@ const Header = () => {
       height={86}
     />
    
-          
-    
       <Flex ml="auto">
         <HStack>
         <Text><Hora /></Text>
