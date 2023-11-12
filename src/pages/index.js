@@ -1,14 +1,16 @@
 import {
   Box,
   Button,
-  Divider,
   Flex,
-  Input,
-  SimpleGrid,
   Table,
+  Stat,
+  StatLabel,
+  StatNumber,
+  StatHelpText,
+  StatArrow,
+  StatGroup,
   Tbody,
   Td,
-  Text,
   Th,
   Thead,
   Tr,
@@ -17,7 +19,7 @@ import { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 
-const Produtos = () => {
+const Home = () => {
   const [name, setName] = useState("");
   const [listProducts, setListProducts] = useState([]);
 
@@ -94,51 +96,31 @@ const Produtos = () => {
         <Sidebar />
 
         <Box w="100%">
-          <SimpleGrid minChildWidth={240} h="fit-content" spacing="6">
-            <Input
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              placeholder="Nome do produto"
-            />
-            <Button w="40" onClick={handleNewProduct}>
-              SALVAR
-            </Button>
-          </SimpleGrid>
 
           <Box overflowY="auto" height="80vh">
-            <Table mt="6">
-              <Thead>
-                <Tr>
-                  <Th fontWeight="bold" fontSize="14px">
-                    Nome
-                  </Th>
-                  <Th></Th>
-                </Tr>
-              </Thead>
-              <Tbody>
-                {listProducts.map((item, i) => (
-                  <Tr key={i}>
-                    <Td color="gray.500">{item.name}</Td>
-                    <Td textAlign="end">
-                      <Button
-                        p="2"
-                        h="auto"
-                        fontSize={11}
-                        color="red.500"
-                        fontWeight="bold"
-                        onClick={() => removeProduct(item.id)}
-                      >
-                        EXCLUIR
-                      </Button>
-                    </Td>
-                  </Tr>
-                ))}
-              </Tbody>
-            </Table>
+            <StatGroup>
+              <Stat>
+                <StatLabel>Serviços pendentes</StatLabel>
+                <StatNumber>45 serviços</StatNumber>
+                <StatHelpText>
+                  <StatArrow type='increase' />
+                  +15.36%
+                </StatHelpText>
+              </Stat>
+
+              <Stat>
+                <StatLabel>Orçamentos pendentes</StatLabel>
+                <StatNumber>10 orçamentos</StatNumber>
+                <StatHelpText>
+                  <StatArrow type='increase' />
+                  10.05%
+                </StatHelpText>
+              </Stat>
+            </StatGroup>
           </Box>
         </Box>
       </Flex>
     </Flex>
   );
 };
-export default Produtos;
+export default Home;
