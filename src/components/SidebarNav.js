@@ -17,9 +17,9 @@ const SidebarNav = () => {
             px="4"
             py="2"
             borderRadius={5}
-            bg={asPath === "/home" ? "gray.200" : ""}
+            bg={asPath === "/" ? "gray.200" : ""}
           >
-            <Link href="/home">
+            <Link href="/">
               <Text fontSize="md" fontWeight="medium" color="gray.500">
                 HOME
               </Text>
