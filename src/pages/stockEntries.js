@@ -29,6 +29,8 @@ const StockEntries = () => {
 
     setStockEntries(db_stock_entries);
 
+   //const [Serviços,setServicos]=useState('') =>
+    
     const db_products = localStorage.getItem("db_products")
       ? JSON.parse(localStorage.getItem("db_products"))
       : [];

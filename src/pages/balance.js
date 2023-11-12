@@ -1,20 +1,31 @@
 import {
-  Box,
+  Container,
+  Image,
   Button,
-  Flex,
-  Input,
-  Select,
-  SimpleGrid,
   Table,
-  Tbody,
-  Td,
-  Th,
   Thead,
+  Tbody,
+  Tfoot,
+  Flex,
   Tr,
+  Th,
+  Td,
+  TableCaption,
+  TableContainer, 
+  Input, 
+  Box,
+  Stat,
+  StatLabel,
+  StatNumber,
+  StatHelpText,
+  StatArrow,
+  StatGroup,
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
+import GetOrcamento from "../components/GetOrcamento";
+import CreateOrcamento from "../components/CreateOrcamento";
 
 const Balance = () => {
   const [listProducts, setListProducts] = useState([]);
@@ -77,59 +88,53 @@ const Balance = () => {
     setListProducts(newArray);
   };
 
+  const [showOrcamento, setShowOrcamento] = useState(false);
+  const [showCreateOrc,setCreateOrc]=useState(false);
+
   return (
-    <Flex h="100vh" flexDirection="column">
-      <Header />
+    
 
-      <Flex w="100%" my="6" maxW={1400} mx="auto" px="6" h="100vh">
-        <Sidebar />
 
-        <Box w="100%">
-          <SimpleGrid minChildWidth={240} h="fit-content" spacing="6">
-            <Select
-              value={productFiltered}
-              onChange={(e) => setProductFiltered(e.target.value)}
-            >
-              <option value="">Selecione um item</option>
-              {cmbProducts &&
-                cmbProducts.length > 0 &&
-                cmbProducts.map((item, i) => (
-                  <option key={i} value={item.product_id}>
-                    {item.product_name}
-                  </option>
-                ))}
-            </Select>
-            <Button w="40" onClick={handleFilterProducts}>
-              FILTRAR
-            </Button>
-          </SimpleGrid>
 
-          <Box overflowY="auto" height="80vh">
-            <Table mt="6">
-              <Thead>
-                <Tr>
-                  <Th fontWeight="bold" fontSize="14px">
-                    Nome
-                  </Th>
-                  <Th fontWeight="bold" fontSize="14px">
-                    Qtd.
-                  </Th>
-                </Tr>
-              </Thead>
-              <Tbody>
-                {listProducts.map((item, i) => (
-                  <Tr key={i}>
-                    <Td color="gray.500">{item.product_name}</Td>
-                    <Td color="gray.500">{item.amount}</Td>
-                  </Tr>
-                ))}
-              </Tbody>
-            </Table>
-          </Box>
-        </Box>
-      </Flex>
-    </Flex>
-  );
-};
+<Flex h="100vh" flexDirection="column">
+<Header />
+
+<Flex w="100%" my="6" maxW={1400} mx="auto" px="6" h="100vh">
+  <Sidebar />
+
+  <Box w="100%">
+
+    <Box overflowY="auto" height="80vh">
+       <GetOrcamento/>
+                    
+                    <Button left={'3'} top={'500'} onClick={() => {
+                    setShowOrcamento(!showOrcamento);
+                    setCreateOrc(false);
+                }}>
+                   Orçamento
+                </Button>
+      
+                {showOrcamento && !showCreateOrc && (
+                <Flex>
+                    <GetOrcamento/>
+                    <Button left={'3'} top={'460'} onClick={()=> setCreateOrc(!showCreateOrc)}>
+                          Fazer Orçamento
+                       </Button>
+                </Flex>
+            )}
+            {showCreateOrc &&
+                <Container>
+                    <CreateOrcamento/>
+                </Container>
+            }
+
+
+    </Box>
+  </Box>
+</Flex>
+</Flex>
+
+  )
+}
 
 export default Balance;

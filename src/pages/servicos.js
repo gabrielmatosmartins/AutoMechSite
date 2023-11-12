@@ -14,8 +14,6 @@ import {
     Tr,
     FormControl,
     FormLabel,
-    FormErrorMessage,
-    FormHelperText,
     Select,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
