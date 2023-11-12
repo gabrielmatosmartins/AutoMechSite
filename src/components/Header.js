@@ -12,7 +12,7 @@ import Logo from "../images/Logo.png"
 import { useSidebarContext } from "../contexts/SidebarContext";
 import { FiMenu } from "react-icons/fi";
 import Image from 'next/image'
-import Hora from "./hora"
+import Hora from "./Hora"
 
 const Header = () => {
   const isMobile = useBreakpointValue({
