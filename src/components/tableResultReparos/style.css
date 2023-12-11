@@ -1,0 +1,75 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  .wrap-table{
+    margin-top: 40px;
+  }
+
+#tableReparos{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.infoCliente{
+
+    font-family: Roboto, sans-serif;
+    font-weight: 0;
+    font-size: 14px;
+    height: 50px;
+    color: #f7b925;
+    background-color: #575756;
+    padding: 10px 30px;
+    border: none;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 10px;
+    transition : 0ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fimReparos{
+
+    font-family: Roboto, sans-serif;
+    font-weight: 0;
+    font-size: 14px;
+    height: 50px;
+    color: #f7b925;
+    background-color: #575756;
+    padding: 10px 30px;
+    border: none;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 10px;
+    transition : 0ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}   
+   
+.btnGroup{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#selectOrcamento{
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+#top-itens{
+    width: 40%;
+    margin-left: 5%;
+    display: flex;
+}
+
+#alert{
+    width: max-content;
+    float: right;
+}

@@ -1,0 +1,273 @@
+*{
+  font-family: 'Work Sans', sans-serif;
+}
+
+.layout {
+  background-color: #ffffff;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  width: 1440px;
+}
+
+.layout .overlap {
+  height: 642px;
+  left: -104px;
+  position: absolute;
+  top: -7px;
+  width: 1544px;
+}
+
+.layout .rectangle {
+  height: 149px;
+  left: 104px;
+  position: absolute;
+  top: 7px;
+  width: 1440px;
+}
+
+.layout .logo {
+  height: 86px;
+  left: 408px;
+  position: absolute;
+  top: 38px;
+  width: 114px;
+}
+
+.layout .group {
+  height: 642px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1544px;
+}
+
+.layout .component {
+  height: 642px;
+}
+
+.layout .overlap-group-2 {
+  height: 631px;
+  left: 45px;
+  position: relative;
+  top: 7px;
+  width: 1499px;
+}
+
+.layout .p {
+  color: #ffffff;
+  font-family: "Segoe UI-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 146px;
+  width: 925px;
+}
+
+.layout .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Segoe UI-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 33px;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  top: 328px;
+  width: 276px;
+}
+
+.layout .mask-group {
+  height: 474px;
+  left: 59px;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.layout .IMAGE {
+  height: 484px;
+  left: 59px;
+  object-fit: cover;
+  position: absolute;
+  top: 147px;
+  width: 1440px;
+}
+
+.layout .rectangle-2 {
+  background-color: #f7b925;
+  height: 20px;
+  left: 760px;
+  position: absolute;
+  top: 603px;
+  width: 20px;
+}
+
+.layout .rectangle-3 {
+  background-color: #1d1a1b;
+  height: 15px;
+  left: 793px;
+  position: absolute;
+  top: 605px;
+  width: 15px;
+}
+
+.layout .rectangle-4 {
+  background-color: #1d1a1b;
+  height: 15px;
+  left: 818px;
+  position: absolute;
+  top: 605px;
+  width: 15px;
+}
+
+.layout .cadastre-se-instance {
+  left: 1252px !important;
+  position: absolute !important;
+  top: 60px !important;
+}
+
+.layout .login-instance {
+  left: 1383px !important;
+  position: absolute !important;
+  top: 60px !important;
+}
+
+.layout .line {
+  height: 6px;
+  left: 569px;
+  position: absolute;
+  top: 107px;
+  width: 104px;
+}
+
+.layout .img {
+  height: 210px;
+  left: 168px;
+  position: absolute;
+  top: 341px;
+  width: 440px;
+}
+
+.layout .home {
+  height: 13px;
+  left: 592px;
+  position: absolute;
+  top: 70px;
+  width: 54px;
+}
+
+.layout .oramento {
+  height: 18px;
+  left: 826px;
+  position: absolute;
+  top: 70px;
+  width: 106px;
+}
+
+.layout .servios {
+  height: 19px;
+  left: 703px;
+  position: absolute;
+  top: 69px;
+  width: 80px;
+}
+
+.layout .feedback {
+  height: 15px;
+  left: 988px;
+  position: absolute;
+  top: 68px;
+  width: 91px;
+}
+
+.layout .group-2 {
+  height: 44px;
+  left: 187px;
+  position: absolute;
+  top: 384px;
+  width: 44px;
+}
+
+.layout .solicite-um-oramento {
+  height: 53px;
+  left: 239px;
+  position: absolute;
+  top: 381px;
+  width: 298px;
+}
+
+.layout .rectangle-5 {
+  height: 60px;
+  left: 301px;
+  position: absolute;
+  top: 455px;
+  width: 165px;
+}
+
+.layout .solicitar {
+  height: 15px;
+  left: 346px;
+  position: absolute;
+  top: 472px;
+  width: 79px;
+}
+
+.layout .largada {
+  height: 146px;
+  left: 103px;
+  position: absolute;
+  top: 7px;
+  width: 58px;
+}
+
+.layout .rectangle-6 {
+  height: 29px;
+  left: 28px;
+  position: absolute;
+  top: 0;
+  width: 28px;
+}
+
+.layout .rectangle-7 {
+  height: 29px;
+  left: 1px;
+  position: absolute;
+  top: 29px;
+  width: 28px;
+}
+
+.layout .rectangle-8 {
+  height: 30px;
+  left: 29px;
+  position: absolute;
+  top: 58px;
+  width: 29px;
+}
+
+.layout .rectangle-9 {
+  height: 29px;
+  left: 1px;
+  position: absolute;
+  top: 88px;
+  width: 28px;
+}
+
+.layout .rectangle-10 {
+  height: 29px;
+  left: 29px;
+  position: absolute;
+  top: 117px;
+  width: 29px;
+}
+
+.layout .overlap-2 {
+  height: 120px;
+  left: 304px;
+  position: absolute;
+  top: 748px;
+  width: 593px;
+}

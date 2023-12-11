@@ -1,0 +1,33 @@
+*{
+  font-family: 'Work Sans', sans-serif;
+}
+
+.cadastre-se {
+    background-color: #575756;
+    border-radius: 15px;
+    height: 43px;
+    position: relative;
+    width: 120px;
+  }
+
+  .cadastre-se .overlap-group {
+    background-color: #575756;
+    border-radius: 4px;
+    height: 43px;
+    position: relative;
+  }
+  
+  .cadastre-se .div {
+    color: #f7b925;
+    font-family: "Work Sans", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 10px;
+    letter-spacing: 0;
+    line-height: 20px;
+    position: absolute;
+    top: 11px;
+    white-space: nowrap;
+    width: 99px;
+  }
+  

@@ -1,0 +1,17 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  .wrap-table{
+    margin-top: 40px;
+  }
+
+#tableOficinas{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#tableOficinas tr{
+    cursor: pointer;
+}

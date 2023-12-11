@@ -1,0 +1,32 @@
+*{
+  font-family: 'Work Sans', sans-serif;
+}
+
+.login {
+    background-color: #575756;
+    border-radius: 15px;
+    height: 43px;
+    width: 120px;
+  }
+  
+  .login .overlap-group {
+    background-color: #575756;
+    border-radius: 4px;
+    height: 43px;
+    position: relative;
+  }
+  
+  .login .div {
+    color: #f7b925;
+    font-family: "Work Sans", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 36px;
+    letter-spacing: 0;
+    line-height: 20px;
+    position: absolute;
+    top: 11px;
+    white-space: nowrap;
+    width: 47px;
+  }
+  

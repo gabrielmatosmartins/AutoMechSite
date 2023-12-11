@@ -1,0 +1,25 @@
+
+#tagsOficinas{
+    background-color: #ccbb97;
+    padding: 5px;
+    border-radius: 10px;
+    width: max-content;
+    float: left;
+    margin-right: 10px;
+}
+
+#containerDadosOficina{
+    margin: 0 auto;
+    width: 80vw;
+    height: auto;
+    padding: 20px;
+}
+
+#descricaoOficina{
+    margin-bottom: 20px;
+}
+
+#infoOficina{
+    margin-top: 20px;
+    float: left;
+}
