@@ -1,3 +1,18 @@
+import {
+  Box,
+  Button,
+  Divider,
+  Flex,
+  Input,
+  SimpleGrid,
+  Table,
+  Tbody,
+  Td,
+  Text,
+  Th,
+  Thead,
+  Tr,
+} from "@chakra-ui/react";
 import { useEffect,useState } from "react";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
